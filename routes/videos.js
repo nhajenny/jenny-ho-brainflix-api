@@ -51,8 +51,9 @@ router.post('/', (req, res) => {
     const newVideo = {
       id: getNewId(),
       title,
-      channel,
+      channel: "Random Channel", 
       image: "public/images/Upload-video-preview.jpg", 
+      description,
       views: 0,
       likes: 0,
       duration: "2:00",
